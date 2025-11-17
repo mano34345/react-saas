@@ -93,6 +93,32 @@
   color: #d1d5db;
 }
 
+.login-button {
+  background: transparent;
+  color: #374151;
+  border: 2px solid #e5e7eb;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 0.5rem;
+}
+
+.login-button:hover {
+  background: #f8fafc;
+  border-color: #d1d5db;
+}
+
+.header.dark .login-button {
+  color: #d1d5db;
+  border-color: #4b5563;
+}
+
+.header.dark .login-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
 .cta-button {
   background: #2563eb;
   color: white;

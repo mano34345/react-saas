@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FaBars, FaTimes, FaSun, FaMoon } from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import './Header.css';
 
-const Header = () => {
+const Header = ({ onLoginClick }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -17,7 +16,6 @@ const Header = () => {
   }, []);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-  const toggleDarkMode = () => setIsDarkMode(!isDarkMode);
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -29,7 +27,7 @@ const Header = () => {
 
   return (
     <motion.header
-      className={`header ${isScrolled ? 'scrolled' : ''} ${isDarkMode ? 'dark' : ''}`}
+      className={`header ${isScrolled ? 'scrolled' : ''}`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
@@ -49,9 +47,14 @@ const Header = () => {
           </ul>
         </nav>
         <div className="header-actions">
-          <button className="theme-toggle" onClick={toggleDarkMode}>
-            {isDarkMode ? <FaSun /> : <FaMoon />}
-          </button>
+          <motion.button
+            className="login-button"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={onLoginClick}
+          >
+            Login
+          </motion.button>
           <motion.button
             className="cta-button"
             whileHover={{ scale: 1.05 }}
