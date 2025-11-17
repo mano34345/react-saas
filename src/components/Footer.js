@@ -22,10 +22,10 @@ const Footer = () => {
             <h3>SaaSify</h3>
             <p>Revolutionizing business management with cutting-edge SaaS solutions.</p>
             <div className="social-links">
-              <a href="#" className="social-link"><FaFacebook /></a>
-              <a href="#" className="social-link"><FaTwitter /></a>
-              <a href="#" className="social-link"><FaLinkedin /></a>
-              <a href="#" className="social-link"><FaInstagram /></a>
+              <a href="https://facebook.com" className="social-link"><FaFacebook /></a>
+              <a href="https://facebook.com" className="social-link"><FaTwitter /></a>
+              <a href="https://facebook.com" className="social-link"><FaLinkedin /></a>
+              <a href="https://facebook.com" className="social-link"><FaInstagram /></a>
             </div>
           </div>
           <div className="footer-links">

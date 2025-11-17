@@ -96,10 +96,10 @@ const Contact = () => {
             <div className="social-links">
               <h4>Follow Us</h4>
               <div className="social-icons">
-                <a href="#" className="social-link"><FaFacebook /></a>
-                <a href="#" className="social-link"><FaTwitter /></a>
-                <a href="#" className="social-link"><FaLinkedin /></a>
-                <a href="#" className="social-link"><FaInstagram /></a>
+                <a href="https://facebook.com" className="social-link"><FaFacebook /></a>
+                <a href="https://facebook.com" className="social-link"><FaTwitter /></a>
+                <a href="https://facebook.com" className="social-link"><FaLinkedin /></a>
+                <a href="https://facebook.com" className="social-link"><FaInstagram /></a>
               </div>
             </div>
           </motion.div>
